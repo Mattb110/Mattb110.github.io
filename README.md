@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><title>My first Webpage</title><meta charset="utf=8"><body style="background-color:red;"></head>
+<head>
+<title>My first Webpage</title>
+<meta charset="utf=8">
+<body style="background-color:red;">
+</head>
 
 <p>&nbsp;<img src="https://img.search.brave.com/X921G-yEqYQJ9HDJeyUoDzxC4GYldJ56DbX9r7eJZWo/fit/900/900/ce/1/aHR0cHM6Ly95dDMu/Z2dwaHQuY29tLy1B/V3RKVktvcllXNC9B/QUFBQUFBQUFBSS9B/QUFBQUFBQUFBQS8y/dU10aXgtR0VXcy9z/OTAwLWMtay1uby1t/by1yai1jMHhmZmZm/ZmYvcGhvdG8uanBn" width="900" height="450" /></p>
 

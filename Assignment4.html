@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://www.centennialcollege.ca/img/favicon-32x32.png">
+    <style>
+        body {
+            background-color: rgb(255, 254, 180);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <img src="https://www.collegesinstitutes.ca/wp-content/uploads/2015/11/CentennialCMYK.jpg.jpeg" alt="">
+        <h1>Centennial Collage</h1>
+        <h3>Continuing Education Course Evaluation</h3>
+        <p>Please read each question carefully and take time to consider each question before moving on to the next.
+            Give each question a single answer.</p>
+    </center>
+
+    <p>
+        <label for="coursename/code">Course Name/Code:</label>
+        <input type="text" name="coursename/code" id="coursename/code" size="40">
+    </p>
+
+    <p>
+        Semester:
+        <input type="radio" name="semester-season" id="Fall" value="Fall">Fall
+        <input type="radio" name="semester-season" id="Winter" value="Winter">Winter
+        <input type="radio" name="semester-season" id="Spring/Summer" value="Spring/Summer">Spring/Summer &nbsp;
+        <label for="Year">Year:</label>
+        <input type="text" id="year" name="year" size="8" maxlength="1">
+        <br> <br>
+        <label for="instructor">Instructor:</label>
+        <input type="text" name="instructor" id="instructor" size="49">
+    </p>
+
+    <h4 style="background-color: rgb(175, 174, 174); width: 300px;">Course information</h4>
+
+    <p>
+        How would you rate the <strong>course materials</strong>?
+        <input type="radio" name="course-materials" id="excellent" value="excellent">Excellent
+        <input type="radio" name="course-materials" id="good" value="good">Good
+        <input type="radio" name="course-materials" id="fair" value="fair">Fair
+        <input type="radio" name="course-materials" id="bad" value="bad">Bad
+    </p>
+    <p>
+        Does your course give you <strong>what you need to succeed</strong>?
+        <input type="radio" name="course-succeed" id="yes" value="yes">Yes
+        <input type="radio" name="course-succeed" id="somewhat" value="somewhat">Somewhat
+        <input type="radio" name="course-succeed" id="no" value="no">No
+    </p>
+    <p>
+        How would you rate your <strong>learning experience</strong>?
+        <input type="radio" name="course-experience" id="excellent" value="excellent">Excellent
+        <input type="radio" name="course-experience" id="good" value="good">Good
+        <input type="radio" name="course-experience" id="fair" value="fair">Fair
+        <input type="radio" name="course-experience" id="bad" value="bad">Bad
+    </p>
+    <p>
+        Opinion on your course: 1 for bad 10 for good
+        <input type="range" name="agree" id="agree" max="10" min="1">
+    </p>
+
+    <h4 style="background-color: rgb(175, 174, 174); width: 300px;">Instructor</h4>
+
+    <p>
+        How would you rate your instructors<strong>knowledge</strong> of subject?
+        <input type="radio" name="instructor-knowledge" id="excellent" value="excellent">Excellent
+        <input type="radio" name="instructor-knowledge" id="good" value="good">Good
+        <input type="radio" name="instructor-knowledge" id="fair" value="fair">Fair
+        <input type="radio" name="instructor-knowledge" id="bad" value="bad">Bad
+    </p>
+    <p>
+        How would you rate your instructors<strong>communication</strong>in and outside of class?
+        <input type="radio" name="instructor-communication" id="excellent" value="excellent">Excellent
+        <input type="radio" name="instructor-communication" id="good" value="good">Good
+        <input type="radio" name="instructor-communication" id="fair" value="fair">Fair
+        <input type="radio" name="instructor-communication" id="bad" value="bad">Bad
+    </p>
+    <p>
+        Does your instructor strive to meet your<strong>needs</strong>as an individual?
+        <input type="radio" name="instructor-needs" id="yes" value="yes">Yes
+        <input type="radio" name="instructor-needs" id="somewhat" value="somewhat">Somewhat
+        <input type="radio" name="instructor-needs" id="no" value="no">No
+    </p>
+    <p>
+        Opinion on your course instructors overall performance: 1 for bad 10 for good
+        <input type="range" name="agree" id="agree" max="10" min="1">
+    </p>
+
+    <h4 style="background-color: rgb(175, 174, 174); width: 300px;">General Course Information</h4>
+
+    <p>
+        Do you have a <strong>basic understanding</strong>of the requirements of your course?
+        <input type="radio" name="basic-understanding" id="yes" value="yes">Yes
+        <input type="radio" name="basic-understanding" id="somewhat" value="somewhat">Somewhat
+        <input type="radio" name="basic-understanding" id="no" value="no">No
+    </p>
+    <p>
+        Was the <strong>course outline</strong>reviewed/explained at the begining of your course?
+        <input type="radio" name="course-outline" id="yes" value="yes">Yes
+        <input type="radio" name="course-outline" id="somewhat" value="somewhat">Somewhat
+        <input type="radio" name="course-outline" id="unsure" value="unsure">Unsure
+    </p>
+
+    <h4 style="background-color: rgb(175, 174, 174); width: 300px;">Any Other Comments</h4>
+    <p>
+        What is the <strong>best thing</strong> about your course?<br>
+        <textarea name="course-best thing" id="course-best thing" cols="30" rows="10"></textarea>
+    </p>
+    <p>
+        how would you <strong>improve</strong> your course?<br>
+        <textarea name="course-improvement" id="course-improvement" cols="30" rows="10"></textarea>
+    </p>
+    <p>
+        other:<br>
+        <textarea name="other" id="other" cols="30" rows="10"></textarea>
+    </p>
+
+    <button type="submit">Submit</button>
+
+</body>
+
+</html>

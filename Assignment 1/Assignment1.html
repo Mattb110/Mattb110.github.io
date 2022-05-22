@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    .container-i {
+        border: 2px solid black;
+        background-color: lightblue;
+        width: 38%;
+        float: left;
+        padding: 20px;
+    }
+
+    .text-i {
+        border-bottom: 2px solid black;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        font-size: larger;
+    }
+
+    .container-m {
+        position: absolute;
+        border: 2px solid black;
+        background-color: lightblue;
+        width: 38%;
+        float: left;
+        left: 45%;
+        padding: 20px;
+    }
+
+    .text-m {
+        border-bottom: 2px solid black;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        font-size: larger;
+    }
+
+    .text {
+        font-family: 'Poppins', sans-serif;
+        padding: 10px;
+    }
+
+    input[type=number] {
+        padding: 3px;
+        border-radius: 5px;
+    }
+
+    input[type=number]:hover {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    select {
+        padding: 3px;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 5px;
+    }
+
+    button {
+        display: inline-block;
+        padding: 0.35em 1.2em;
+        border: 0.1em solid #8d8c8c;
+        margin: 0 0.3em 0.3em 0;
+        border-radius: 4px;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: #000000;
+        text-align: center;
+        transition: all 0.2s;
+    }
+
+    button:hover {
+        color: #ffffff;
+        background-color: #252525;
+    }
+
+    p.result {
+        border: #000000 2px solid;
+        border-radius: 5px;
+        width: 20%;
+        text-align: center;
+        background-color: #252525;
+        color: #ffffff;
+    }
+</style>
+
+<body>
+
+    <br>
+    <div class="container-i">
+        <div class="text-i">
+            <p>Imperial Units</p>
+            <p>BMR Calculator</p>
+        </div>
+        <div class="text">
+            <br>
+            <form action="#">
+                <label for="gender">Gender:</label>
+                <select id="genderI">
+                    <option value="none">Gender</option>
+                    <option value="male" selected>Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <br>
+                <br>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" style="width: 50px;">
+                <br>
+
+                <p>Your height</p>
+                &nbsp;&nbsp;
+                <label for="feet">Feet:</label>
+                <input type="number" name="feet" id="feet" style="width: 50px;">
+                &nbsp;
+                <label for="inches">Inches:</label>
+                <input type="number" name="inches" id="inches" style="width: 50px;" min="0" max="11">
+
+                <p>Your weight</p>
+                <label for="stones">Stones:</label>
+                <input type="number" name="stones" id="stones" style="width: 50px;">
+                <label for="pounds">Pounds:</label>
+                <input type="number" name="pounds" id="pounds" style="width: 50px;">
+
+                <p>Select your activity level:</p>
+
+                <input type="radio" name="activity" id="little or no exercise">I am sedentary (little or no
+                exercise)
+                <br>
+                <input type="radio" name="activity" id="lightly active">I am lightly active (light exercise or
+                sports
+                1-3
+                days
+                per week)
+                <br>
+                <input type="radio" name="activity" id="moderatley active">I am moderatly active (moderate exercise
+                or
+                sports
+                3-5 days per week)
+                <br>
+                <input type="radio" name="activity" id="very active">I am very active (hard exercise or sports 6-7
+                days
+                per
+                week)
+                <br>
+                <input type="radio" name="activity" id="super active">I am super active (very hard exercise or
+                sports
+                and a
+                physical job or 2x training)
+                <br>
+
+            </form>
+            <button type="button-i" onclick="Imperial_calc()">
+                Result</button>
+
+            <p class="result" id="BMR Result-i">BMR</p>
+
+        </div>
+    </div>
+
+
+
+    <div class="container-m">
+        <div class="text-m">
+            <p>Metric Units</p>
+            <p>BMR Calculator</p>
+        </div>
+        <div class="text">
+            <br>
+            <form action="#">
+                <label for="gender">Gender:</label>
+                <select id="genderM">
+                    <option value="none">Gender</option>
+                    <option value="male" selected>Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <br>
+                <br>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" style="width: 50px;">
+                <br>
+
+                <p>Your height</p>
+
+                <label for="cm">Cm:</label>
+                <input type="number" name="cm" id="cm" style="width: 50px;">
+
+                <p>Your weight</p>
+                <label for="kg">Kg:</label>
+                <input type="number" name="kg" id="kg" style="width: 50px;">
+
+                <p>Select your activity level:</p>
+
+                <input type="radio" name="activity" id="little or no exercise">I am sedentary (little or no
+                exercise)
+                <br>
+                <input type="radio" name="activity" id="lightly active">I am lightly active (light exercise or
+                sports
+                1-3
+                days
+                per week)
+                <br>
+                <input type="radio" name="activity" id="moderatley active">I am moderatly active (moderate
+                exercise
+                or
+                sports
+                3-5 days per week)
+                <br>
+                <input type="radio" name="activity" id="very active">I am very active (hard exercise or sports
+                6-7
+                days
+                per
+                week)
+                <br>
+                <input type="radio" name="activity" id="super active">I am super active (very hard exercise or
+                sports
+                and a
+                physical job or 2x training)
+                <br>
+                </ul>
+            </form>
+
+            <button id="metric" type="button" onclick="Metric_calc()">
+                Result</button>
+            <p class="result" id="BMR Result-m">BMR</p>
+
+        </div>
+    </div>
+
+    <script src="Assignment1.js"></script>
+</body>
+
+</html>
